@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../src/styling/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../src/styling/custom.css"
+    />
+
+    <!-- font -->
+    <link href="https://fonts.cdnfonts.com/css/blanka" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/ample" rel="stylesheet" />
+
+    <title>Daftar</title>
+    <link
+      rel="icon"
+      href="../../../img/logo.png"
+      sizes="32x32"
+      type="image/png"
+    />
+  </head>
+  <body class="sign_in">
+    <div
+      class="min-h-screen flex justify-center items-center flex-col relative"
+    >
+      <img
+        src="assets/sakura.gif"
+        alt="sakura"
+        class="absolute z-0 w-[350px] sm:w-[400px] md:w-[500px] lg:w-[600px] top-[50%] translate-y-[-50%]"
+      />
+
+      <div
+        class="bg-[rgba(255,255,255,0.1)] rounded-[13px] w-[350px] sm:w-[380px] lg:w-[500px] py-[15px] lg:py-6 shadow-[0_4px_15px_rgba(0,0,0,0.8)] backdrop-blur-[4px] text-center relative z-10"
+      >
+        <h1 class="text-[3.5em] text-[#5271ff] font-bold font-blanka regist">
+          Registration
+        </h1>
+
+        <form class="mt-12">
+          <!-- username input -->
+          <div class="relative w-[250px] mx-auto mb-3">
+            <input
+              type="text"
+              placeholder="Username"
+              name="username"
+              class="w-full py-2.5 px-[30px] pr-[40px] border-none outline-none rounded-[25px]"
+            />
+            <span
+              class="absolute right-5 top-[54%] -translate-y-1/2 text-[#23008c]"
+            >
+              <ion-icon name="person"></ion-icon>
+            </span>
+          </div>
+          <!-- Email Input -->
+          <div class="relative w-[250px] mx-auto mb-3">
+            <input
+              type="email"
+              placeholder="Email"
+              name="email"
+              class="w-full py-2.5 px-[30px] pr-[40px] border-none outline-none rounded-[25px]"
+            />
+            <span
+              class="absolute right-5 top-[54%] -translate-y-1/2 text-[#23008c]"
+            >
+              <ion-icon name="mail"></ion-icon>
+            </span>
+          </div>
+
+          <!-- Password Input -->
+          <div class="relative w-[250px] mx-auto mb-3">
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              class="w-full py-2.5 px-[30px] pr-[40px] border-none outline-none rounded-[25px]"
+            />
+            <span
+              class="absolute right-5 top-[54%] -translate-y-1/2 text-[#23008c]"
+            >
+              <ion-icon name="lock"></ion-icon>
+            </span>
+          </div>
+
+          <!-- agree terms  -->
+          <div class="text-center text-xs font-bold">
+            <label>
+              <input type="checkbox" /> I agree to the terms & conditions
+            </label>
+          </div>
+
+          <!-- Submit Button -->
+          <button
+            type="submit"
+            id="signInBtn"
+            class="w-[180px] h-[38px] text-white relative z-[1] rounded-xl mt-5 mx-auto block after:content-[''] after:absolute after:inset-0 after:-z-[1] after:bg-[#081b7c] after:rounded-[10px] before:content-[''] before:absolute before:top-[-2px] before:left-[-2px] before:w-[calc(100%+4px)] before:h-[calc(100%+4px)] before:bg-gradient-to-r before:from-red-500 before:via-yellow-500 before:to-blue-500 before:bg-[length:600%] before:-z-[1] before:rounded-[10px] before:blur-lg before:animate-glowing before:opacity-100 before:transition-opacity before:duration-300 hover:bg-[#150483ab] hover:text-[#ccc] active:after:bg-transparent active:text-white active:font-bold"
+          >
+            Submit
+          </button>
+
+          <!-- Register Link -->
+          <div class="text-center">
+            <p class="mt-5 text-[0.8em] relative z-20">
+              Sudah memiliki akun?
+              <a href="login.html" class="text-black hover:underline">Login</a>
+            </p>
+          </div>
+
+          <img
+            src="assets/girls.png"
+            alt="girls"
+            class="absolute z-10 w-[80px] sm:w-[100px] lg:w-[140px] bottom-[-1rem] right-[-0.8rem] sm:right-[-1.2rem] lg:right-[-2.2rem] lg:bottom-[-1.5rem]"
+          />
+        </form>
+      </div>
+    </div>
+
+    <!-- icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="login-register.js"></script>
+  </body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../src/styling/style.css" />
+    <link rel="stylesheet" href="../../../src/styling/custom.css" />
+    <!-- Animate  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Top Up Games</title>
+  </head>
+  <body class="bg-black">
+    <div class="custom relative w-full z-50" id="navbar-container">
+      <div class="flex items-center justify-between px-5 navbar-nav">
+        <img
+          alt="Logo with text 'Chenzle'"
+          src="../../../img/logo.png"
+          width="70 "
+        />
+
+        <div class="hidden lg:flex space-x-4">
+          <img alt="Star icon" src="../../../img/a.png" width="300" />
+        </div>
+
+        <div class="hidden lg:flex space-x-6 text-white text-sm">
+          <a class="flex items-center space-x-1" href="/">
+            <span>Home</span>
+            <div class="mb-2">
+              <img alt="Home icon" src="img/1.png" width="35" />
+            </div>
+          </a>
+
+          <a
+            class="flex items-center space-x-1"
+            href="src/pages/invoice/cek-pesanan.html"
+          >
+            <span>Cek Pesanan</span>
+            <div class="mb-2">
+              <img alt="Order check icon" src="img/5.png" width="30" />
+            </div>
+          </a>
+
+          <a
+            class="flex items-center space-x-1"
+            href="src/pages/pricelist/daftar-harga.html"
+          >
+            <span>Daftar Harga</span>
+            <div class="mb-2">
+              <img alt="Price list icon" src="img/4.png" width="35" />
+            </div>
+          </a>
+
+          <a
+            class="flex items-center space-x-1"
+            href="src/pages/topuser/top-user.html"
+          >
+            <span>Top 10</span>
+            <div class="mb-2">
+              <img alt="Top 10 icon" src="img/6.png" width="30" />
+            </div>
+          </a>
+
+          <div class="relative">
+            <button
+              class="flex items-center space-x-1 focus:outline-none mt-0.5"
+              id="jadwal-toggle"
+            >
+              <span class="flex items-center">Jadwal</span>
+              <div class="mb-2">
+                <img alt="Top 10 icon" src="../../../img/7.png" width="30" />
+              </div>
+              <i class="fas fa-caret-down"></i>
+            </button>
+            <div
+              class="absolute hidden bg-blue-300 text-slate-700 right-0 w-max"
+              id="jadwal-menu"
+            >
+              <a
+                class="block px-4 py-4 hover:bg-blue-400 animate-slide-down"
+                href="#"
+                style="--animation-delay: 0ms"
+                >Jadwal Gift</a
+              >
+              <a
+                class="block px-4 py-4 hover:bg-blue-400 animate-slide-down"
+                href="#"
+                style="--animation-delay: 80ms"
+                >Jadwal Starlight</a
+              >
+              <a
+                class="block px-4 py-4 hover:bg-blue-400 animate-slide-down"
+                href="#"
+                style="--animation-delay: 160ms"
+                >Jadwal Room Tour 1</a
+              >
+              <a
+                class="block px-4 py-4 hover:bg-blue-400 animate-slide-down"
+                href="#"
+                style="--animation-delay: 240ms"
+                >Jadwal Room Tour 2</a
+              >
+              <a
+                class="block px-4 py-4 hover:bg-blue-400 animate-slide-down"
+                href="#"
+                style="--animation-delay: 320ms"
+                >Jadwal Room Tour 3</a
+              >
+              <a
+                class="block px-4 py-4 hover:bg-blue-400 animate-slide-down"
+                href="#"
+                style="--animation-delay: 400ms"
+                >Jadwal Room Tour 4</a
+              >
+            </div>
+          </div>
+
+          <div class="static">
+            <button
+              class="items-center font-bold space-x-1 focus:outline-none login"
+              id="login-toggle-desktop"
+            >
+              <a class="font-sans">Login</a>
+              <i class="fas fa-caret-down"></i>
+            </button>
+
+            <div
+              class="fixed right-0 mr-0 hidden text-slate-700 animate__animated animate__fadeIn"
+              id="login-menu-desktop"
+            >
+              <a
+                class="block px-5 py-4 hover:bg-blue-400 animate-slide-down"
+                href="src/pages/login/login.html"
+                style="--animation-delay: 0ms"
+                >Login</a
+              >
+              <a
+                class="block px-5 py-4 hover:bg-blue-400 animate-slide-down"
+                href="src/pages/register/login.html"
+                style="--animation-delay: 80ms"
+                >Register</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- navbar mobile login -->
+        <div class="lg:hidden flex items-center">
+          <div class="relative">
+            <button
+              class="flex items-center space-x-1 text-white focus:outline-none"
+              id="login-toggle"
+            >
+              <span>Login</span>
+              <i class="fas fa-caret-down h-4 w-5"></i>
+            </button>
+
+            <div
+              class="absolute hidden bg-blue-300 text-white rounded shadow-lg right-0 w-max"
+              id="login-menu"
+            >
+              <a class="block px-4 py-4 hover:bg-blue-400" href="#">Login</a>
+              <a class="block px-4 py-4 hover:bg-blue-400" href="#">Register</a>
+            </div>
+          </div>
+
+          <!-- mobile navbar  -->
+
+          <button
+            class="text-white focus:outline-none ml-4 px-4"
+            id="menu-toggle"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="hidden lg:hidden absolute right-0 w-56 bg-blue-300 text-white rounded-b-lg shadow-lg navbar-nav-mobile z-40"
+        id="mobile-menu"
+      >
+        <div class="px-0 pb-3 space-y-1 sm:px-3 navbar-text">
+          <a
+            class="block px-3 py-2 text-base font-medium text-white hover:bg-blue-400"
+            href="#"
+            >Home</a
+          >
+          <a
+            class="block px-3 py-2 text-base font-medium text-white hover:bg-blue-400"
+            href="#"
+            >Cek Pesanan</a
+          >
+          <a
+            class="block px-3 py-2 text-base font-medium text-white hover:bg-blue-400"
+            href="#"
+            >Daftar Harga</a
+          >
+          <a
+            class="block px-3 py-2 text-base font-medium text-white hover:bg-blue-400"
+            href="#"
+            >Top 10</a
+          >
+          <div class="relative">
+            <button
+              class="block px-3 py-2 text-base font-medium text-white hover:bg-blue-400 focus:outline-none"
+              id="mobile-jadwal-toggle"
+            >
+              Jadwal
+              <i class="fas fa-caret-down"></i>
+            </button>
+            <div
+              class="hidden bg-blue-300 text-white mt-2 rounded shadow-lg right-0 w-max px-2"
+              id="mobile-jadwal-menu"
+            >
+              <a class="block px-4 py-4 hover:bg-blue-400" href="#"
+                >Jadwal Gift</a
+              >
+              <a class="block px-4 py-4 hover:bg-blue-400" href="#"
+                >Jadwal Starlight</a
+              >
+              <a class="block px-4 py-4 hover:bg-blue-400" href="#"
+                >Jadwal Room Tour 1</a
+              >
+              <a class="block px-4 py-4 hover:bg-blue-400" href="#"
+                >Jadwal Room Tour 2</a
+              >
+              <a class="block px-4 py-4 hover:bg-blue-400" href="#"
+                >Jadwal Room Tour 3</a
+              >
+              <a class="block px-4 py-4 hover:bg-blue-400" href="#"
+                >Jadwal Room Tour 4</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- navbar end -->
+
+    <script src="navbar.js"></script>
+  </body>
+</html>

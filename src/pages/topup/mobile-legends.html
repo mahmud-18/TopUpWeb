@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../src/styling/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../src/styling/custom.css"
+    />
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://fonts.cdnfonts.com/css/hole-hearted" rel="stylesheet" />
+
+    <title>Top Up Games</title>
+    <link
+      rel="icon"
+      href="../../../img/logo.png"
+      sizes="32x32"
+      type="image/png"
+    />
+  </head>
+  <body class="bg-custom-gradient min-h-screen font-sans">
+    <!-- navbar -->
+    <div id="navbar-container" class="w-full"></div>
+    <!-- navbar end -->
+
+    <section class="pt-16 overflow-hidden min-h-screen py-12 px-[15px]">
+      <div class="flex flex-col lg:flex-row gap-6">
+        <!-- Left Panel -->
+        <div class="w-full lg:w-1/3 space-y-5">
+          <!-- Banner -->
+          <div
+            class="w-full bg-pink-200/90 rounded-lg overflow-hidden h-[200px]"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <img
+              alt="A colorful anime character sitting on a large fruit slice with a dreamy background"
+              src="assets/change.jpeg"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <!-- Tutorial -->
+          <div
+            class="w-full bg-pink-200/90 rounded-lg p-4"
+            data-aos="fade-right"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            <h1 class="text-lg font-bold">Mobile Legends</h1>
+            <span class="text-xs text-blue-900">
+              <i class="fa-regular fa-circle-check"></i> Verified
+            </span>
+
+            <div class="mt-2">
+              <h2 class="text-base font-semibold">
+                Cara Order Mobile Legends :
+              </h2>
+              <ul class="text-sm mt-2 space-y-1">
+                <li>- Masukan Id & Server</li>
+                <li>- Pilih Pricelist yang kamu mau</li>
+                <li>- Pilih Pembayaran</li>
+                <li>- Masukan email dan no whatsapp untuk mendapatkan bukti</li>
+                <li>- Pencet order now dan pembayaran selesai</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Testimoni -->
+          <div
+            class="w-full bg-pink-200/90 rounded-lg p-4"
+            data-aos="fade-right"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+          >
+            <h1 class="text-lg font-bold">Testimoni</h1>
+          </div>
+        </div>
+
+        <!-- Right Panel -->
+        <div class="w-full lg:w-2/3 space-y-5">
+          <!-- Input Data -->
+          <div
+            class="bg-pink-200/90 p-5 rounded-lg"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <h1 class="text-lg font-bold mb-5 border-b-2 border-white">
+              Lengkapi Data
+            </h1>
+            <div class="flex gap-12">
+              <div class="flex-1">
+                <label class="block mb-2 text-sm"> ID </label>
+                <input type="text" class="w-full p-2 rounded-lg border-none" />
+              </div>
+              <div class="flex-1">
+                <label class="block mb-2 text-sm"> Server </label>
+                <input type="text" class="w-full p-2 rounded-lg border-none" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Pilih Nominal -->
+          <div
+            class="bg-pink-200/90 p-5 rounded-lg"
+            data-aos="fade-left"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            <h1 class="text-lg font-bold mb-5 border-b-2 border-white">
+              Pilih Nominal
+            </h1>
+
+            <!-- Card Container -->
+            <div class="flex gap-5 overflow-x-auto pb-4">
+              <div
+                class="flex-none w-40 bg-white rounded-lg overflow-hidden text-center"
+              >
+                <img
+                  src="assets/topup.jpeg"
+                  alt="Top Up"
+                  class="w-full h-auto"
+                />
+                <a href="" class="block py-2 font-semibold">Top Up</a>
+              </div>
+              <div
+                class="flex-none w-40 bg-white rounded-lg overflow-hidden text-center"
+              >
+                <img
+                  src="assets/Weekly.png"
+                  alt="Weekly"
+                  class="w-full h-auto"
+                />
+                <a href="" class="block py-2 font-semibold">Weekly</a>
+              </div>
+              <div
+                class="flex-none w-40 bg-white rounded-lg overflow-hidden text-center"
+              >
+                <img
+                  src="assets/Membership.jpeg"
+                  alt="Membership"
+                  class="w-full h-auto"
+                />
+                <a href="" class="block py-2 font-semibold">Membership</a>
+              </div>
+              <div
+                class="flex-none w-40 bg-white rounded-lg overflow-hidden text-center"
+              >
+                <img
+                  src="assets/gplay.png"
+                  alt="Google Play"
+                  class="w-full h-auto"
+                />
+                <a href="" class="block py-2 font-semibold">Google Play</a>
+              </div>
+              <div
+                class="flex-none w-40 bg-white rounded-lg overflow-hidden text-center"
+              >
+                <img
+                  src="assets/topup.jpeg"
+                  alt="Server Luar"
+                  class="w-full h-auto"
+                />
+                <a href="" class="block py-2 font-semibold">Server Luar</a>
+              </div>
+              <div
+                class="flex-none w-40 bg-white rounded-lg overflow-hidden text-center"
+              >
+                <img
+                  src="assets/topup.jpeg"
+                  alt="Server Brazil"
+                  class="w-full h-auto"
+                />
+                <a href="" class="block py-2 font-semibold">Server Brazil</a>
+              </div>
+            </div>
+
+            <!-- Pricelist -->
+            <div
+              class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-4"
+            >
+              <div
+                class="bg-pink-500 p-4 lg:h-[100px] rounded-xl cursor-pointer hover:bg-pink-600 transition-colors"
+              >
+                <h2 class="text-sm font-medium">Mobile Legend - 86 Diamonds</h2>
+                <p class="text-xs mt-1">Rp. 20.200</p>
+              </div>
+              <div
+                class="bg-pink-500 p-4 rounded-xl cursor-pointer lg:h-[100px] hover:bg-pink-600 transition-colors"
+              >
+                <h2 class="text-sm font-medium">Mobile Legend - 86 Diamonds</h2>
+                <p class="text-xs mt-1">Rp. 20.200</p>
+              </div>
+              <div
+                class="bg-pink-500 p-4 rounded-xl lg:h-[100px] cursor-pointer hover:bg-pink-600 transition-colors"
+              >
+                <h2 class="text-sm font-medium">Mobile Legend - 86 Diamonds</h2>
+                <p class="text-xs mt-1">Rp. 20.200</p>
+              </div>
+              <div
+                class="bg-pink-500 p-4 lg:h-[100px] rounded-xl cursor-pointer hover:bg-pink-600 transition-colors"
+              >
+                <h2 class="text-sm font-medium">Mobile Legend - 86 Diamonds</h2>
+                <p class="text-xs mt-1">Rp. 20.200</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pembayaran -->
+          <div
+            class="bg-pink-200/90 p-5 rounded-lg"
+            data-aos="fade-left"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+          >
+            <h1 class="text-lg font-bold mb-5 border-b-2 border-white">
+              Pilih Pembayaran
+            </h1>
+
+            <div class="space-y-4">
+              <!-- E-Wallet Dropdown -->
+              <div class="bg-white rounded-lg overflow-hidden">
+                <button
+                  onclick="toggleSection('ewallet')"
+                  class="w-full px-4 py-3 flex justify-between items-center bg-pink-500 text-white hover:bg-pink-600 transition-colors"
+                >
+                  <span class="font-medium">E-Wallet</span>
+                  <i
+                    class="fa-solid fa-angle-down transition-transform"
+                    id="ewallet-icon"
+                  ></i>
+                </button>
+                <div id="ewallet" class="hidden p-4 sm:grid-cols-4 gap-4">
+                  <div
+                    class="flex flex-col items-center p-3 border border-gray-200 rounded-lg hover:border-pink-400 hover:shadow-md transition-all cursor-pointer hover:-translate-y-0.5"
+                  >
+                    <img
+                      src="assets/payment/gopay.jpeg"
+                      alt="Gopay"
+                      class="w-12 h-12 object-contain"
+                    />
+                    <span class="text-sm mt-2">Gopay</span>
+                  </div>
+                  <div
+                    class="flex flex-col items-center p-3 border border-gray-200 rounded-lg hover:border-pink-400 hover:shadow-md transition-all cursor-pointer hover:-translate-y-0.5"
+                  >
+                    <img
+                      src="assets/payment/ovo.jpeg"
+                      alt="OVO"
+                      class="w-12 h-12 object-contain"
+                    />
+                    <span class="text-sm mt-2">OVO</span>
+                  </div>
+                  <div
+                    class="flex flex-col items-center p-3 border border-gray-200 rounded-lg hover:border-pink-400 hover:shadow-md transition-all cursor-pointer hover:-translate-y-0.5"
+                  >
+                    <img
+                      src="assets/payment/spay.png"
+                      alt="ShopeePay"
+                      class="w-12 h-12 object-contain"
+                    />
+                    <span class="text-sm mt-2">ShopeePay</span>
+                  </div>
+                  <div
+                    class="flex flex-col items-center p-3 border border-gray-200 rounded-lg hover:border-pink-400 hover:shadow-md transition-all cursor-pointer hover:-translate-y-0.5"
+                  >
+                    <img
+                      src="assets/payment/dana.jpeg"
+                      alt="Dana"
+                      class="w-12 h-12 object-contain"
+                    />
+                    <span class="text-sm mt-2">Dana</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Virtual Account Dropdown -->
+              <div class="bg-white rounded-lg overflow-hidden">
+                <button
+                  onclick="toggleSection('va')"
+                  class="w-full px-4 py-3 flex justify-between items-center bg-pink-500 text-white hover:bg-pink-600 transition-colors"
+                >
+                  <span class="font-medium">Virtual Account</span>
+                  <i
+                    class="fa-solid fa-angle-down transition-transform"
+                    id="va-icon"
+                  ></i>
+                </button>
+                <div id="va" class="hidden p-4 sm:grid-cols-3 gap-4">
+                  <div
+                    class="flex flex-col items-center p-3 border border-gray-200 rounded-lg hover:border-pink-400 hover:shadow-md transition-all cursor-pointer hover:-translate-y-0.5"
+                  >
+                    <img
+                      src="assets/payment/bri.jpeg"
+                      alt="BRI"
+                      class="w-12 h-12 object-contain"
+                    />
+                    <span class="text-sm mt-2">BRI VA</span>
+                  </div>
+                  <div
+                    class="flex flex-col items-center p-3 border border-gray-200 rounded-lg hover:border-pink-400 hover:shadow-md transition-all cursor-pointer hover:-translate-y-0.5"
+                  >
+                    <img
+                      src="assets/payment/jago.png"
+                      alt="Jago"
+                      class="w-12 h-12 object-contain"
+                    />
+                    <span class="text-sm mt-2">Jago VA</span>
+                  </div>
+                  <div
+                    class="flex flex-col items-center p-3 border border-gray-200 rounded-lg hover:border-pink-400 hover:shadow-md transition-all cursor-pointer hover:-translate-y-0.5"
+                  >
+                    <img
+                      src="assets/payment/seabank.png"
+                      alt="Seabank"
+                      class="w-12 h-12 object-contain"
+                    />
+                    <span class="text-sm mt-2">SeaBank VA</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bukti Pembelian -->
+          <div
+            class="bg-pink-200/90 p-5 rounded-lg"
+            data-aos="fade-left"
+            data-aos-delay="600"
+            data-aos-duration="1000"
+          >
+            <h1 class="text-lg font-bold mb-5 border-b-2 border-white">
+              Bukti Pembelian
+            </h1>
+            <div class="space-y-4">
+              <div>
+                <label class="block mb-2"> No Whatsapp </label>
+                <input
+                  type="tel"
+                  placeholder="081234xxxx"
+                  class="w-full p-2 rounded-lg border-none"
+                />
+              </div>
+              <div>
+                <label class="block mb-2"> Email </label>
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  class="w-full p-2 rounded-lg border-none"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Order Button & Loading Animation -->
+          <div class="relative w-full">
+            <!-- Truck Container di luar button -->
+            <div class="truck-wrapper w-[830px]">
+              <i class="fas fa-truck truck-icon"></i>
+            </div>
+
+            <button
+              onclick="startOrderAnimation()"
+              id="order-button"
+              class="w-full h-[45px] text-white relative z-[1] rounded-xl my-8 mx-auto block bg-[#081b7c] hover:bg-[#150483ab]"
+            >
+              <span class="button-text"
+                >Order Now <i class="fa-solid fa-cart-shopping ml-2"></i
+              ></span>
+              <div class="loading-content">
+                <div class="road"></div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="features-container" class="w-full"></div>
+
+    <!-- footer -->
+    <div id="footer-container" class="w-full"></div>
+    <!-- footer end -->
+
+    <script src="../navbaritem.js"></script>
+    <script src="topup.js"></script>
+    <script>
+      // Inisialisasi AOS
+      AOS.init({
+        once: true, // animasi hanya sekali saat pertama scroll
+        offset: 50, // offset (dalam px) dari titik trigger
+        duration: 1000, // durasi animasi dalam ms
+        easing: "ease-in-out", // jenis easing
+      });
+    </script>
+  </body>
+</html>

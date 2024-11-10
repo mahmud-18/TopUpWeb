@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="src/styling/style.css" />
+    <link rel="stylesheet" type="text/css" href="src/styling/custom.css" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://fonts.cdnfonts.com/css/hole-hearted" rel="stylesheet" />
+
+    <title>Top Up Games</title>
+    <link rel="icon" href="../img/logo.png" sizes="32x32" type="image/png" />
+  </head>
+  <body class="bg-custom-gradient min-h-screen font-sans">
+    <!-- NAVBAR -->
+    <div id="navbar-container"></div>
+    <!-- navbar end -->
+
+    <!-- hero-header section -->
+    <section
+      class="hero py-8 flex items-center justify-center bg-hero-pattern bg-top bg-repeat bg-50% flex-col gap-8"
+    >
+      <!-- banner dengan animasi slide dan fade -->
+      <section
+        class="flex justify-center w-full"
+        data-aos="fade-down"
+        data-aos-duration="1200"
+      >
+        <div
+          class="w-[90%] h-[30vh] sm:w-[90%] sm:h-[35vh] lg:w-[70%] lg:h-[54vh] rounded-[1rem] shadow-lg shadow-slate-900 animate-gradient"
+          style="background: linear-gradient(to bottom, #0bb6ff, #ff44a1)"
+          data-aos="zoom-in"
+          data-aos-delay="400"
+        ></div>
+      </section>
+
+      <!-- search dengan animasi bounce -->
+      <div
+        class="flex justify-center relative z-10"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="600"
+      >
+        <input
+          type="text"
+          name="search"
+          placeholder=" Search Product..."
+          class="max-w-[720px] sm:w-[520px] lg:w-[800px] text-lg pt-3 pb-3 pr-12 pl-5 rounded-3xl border-2 border-gray-500 outline-none shadow-[0px_0.5rem_1rem_rgba(0,0,0,0.6)] hover:shadow-[0px_0.7rem_1.5rem_rgba(0,0,0,0.8)] transition-all duration-300"
+        />
+
+        <img
+          src="https://img.icons8.com/nolan/64/search.png"
+          alt="search"
+          class="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 cursor-pointer hover:scale-110 transition-transform duration-300"
+        />
+      </div>
+
+      <!-- menu options dengan animasi stagger -->
+      <div
+        class="flex flex-wrap justify-center gap-6 md:grid md:grid-cols-4 md:gap-7 lg:flex lg:flex-wrap z-10"
+        data-aos="fade-up"
+        data-aos-delay="800"
+      >
+        <!-- Top Up Button -->
+        <div
+          class="menu-options flex relative justify-center items-center"
+          id="topup-btn"
+          data-aos="zoom-in"
+          data-aos-delay="900"
+        >
+          <div
+            class="w-[120px] h-[45px] sm:w-[130px] sm:h-[50px] md:w-[140px] md:h-[60px] lg:w-[160px] lg:h-[55px] flex justify-center items-center bg-[radial-gradient(circle,#a5baff,#5a94ff)] rounded-[25px] border-2 border-pink-300 overflow-hidden shadow-[inset_-4px_-4px_10px_rgba(255,255,255,0.3),inset_4px_4px_10px_rgba(0,0,0,0.5),0_4px_15px_rgba(0,0,0,0.7)] cursor-pointer hover:scale-105 transition-all duration-300"
+          >
+            <div
+              class="transition-all duration-300 hover:scale-95 w-full h-full flex justify-center items-center rounded-[25px]"
+            >
+              <img
+                class="w-10 h-10 sm:w-12 sm:h-12 lg:w-12 lg:h-12"
+                src="https://img.icons8.com/nolan/48/star.png"
+                alt="star"
+              />
+              <h2
+                class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-max text-base sm:text-lg lg:text-base font-bold text-slate-900"
+              >
+                Top Up
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sosmed Button -->
+        <div
+          class="menu-options flex relative justify-center items-center"
+          id="sosmed-btn"
+          data-aos="zoom-in"
+          data-aos-delay="1000"
+        >
+          <div
+            class="w-[120px] h-[45px] sm:w-[130px] sm:h-[50px] md:w-[140px] md:h-[60px] lg:w-[160px] lg:h-[55px] flex justify-center items-center bg-[radial-gradient(circle,#a5baff,#5a94ff)] rounded-[25px] border-2 border-pink-300 overflow-hidden shadow-[inset_-4px_-4px_10px_rgba(255,255,255,0.3),inset_4px_4px_10px_rgba(0,0,0,0.5),0_4px_15px_rgba(0,0,0,0.7)] cursor-pointer hover:scale-105 transition-all duration-300"
+          >
+            <div
+              class="transition-all duration-300 hover:scale-95 w-full h-full flex justify-center items-center rounded-[25px]"
+            >
+              <img
+                class="w-10 h-10 sm:w-12 sm:h-12 lg:w-12 lg:h-12"
+                src="https://img.icons8.com/nolan/48/star.png"
+                alt="star"
+              />
+              <h2
+                class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-max text-base sm:text-lg lg:text-base font-bold text-slate-900"
+              >
+                Sosmed
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- APK Button -->
+        <div
+          class="menu-options flex relative justify-center items-center"
+          id="apk-btn"
+          data-aos="zoom-in"
+          data-aos-delay="1100"
+        >
+          <div
+            class="w-[120px] h-[45px] sm:w-[130px] sm:h-[50px] md:w-[140px] md:h-[60px] lg:w-[160px] lg:h-[55px] flex justify-center items-center bg-[radial-gradient(circle,#a5baff,#5a94ff)] rounded-[25px] border-2 border-pink-300 overflow-hidden shadow-[inset_-4px_-4px_10px_rgba(255,255,255,0.3),inset_4px_4px_10px_rgba(0,0,0,0.5),0_4px_15px_rgba(0,0,0,0.7)] cursor-pointer hover:scale-105 transition-all duration-300"
+          >
+            <div
+              class="transition-all duration-300 hover:scale-95 w-full h-full flex justify-center items-center rounded-[25px]"
+            >
+              <img
+                class="w-10 h-10 sm:w-12 sm:h-12 lg:w-12 lg:h-12"
+                src="https://img.icons8.com/nolan/48/star.png"
+                alt="star"
+              />
+              <h2
+                class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-max text-base sm:text-lg lg:text-base font-bold text-slate-900"
+              >
+                Premium
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- Joki Button -->
+        <div
+          class="menu-options flex relative justify-center items-center"
+          id="joki-btn"
+          data-aos="zoom-in"
+          data-aos-delay="1200"
+        >
+          <div
+            class="w-[120px] h-[45px] sm:w-[130px] sm:h-[50px] md:w-[140px] md:h-[60px] lg:w-[160px] lg:h-[55px] flex justify-center items-center bg-[radial-gradient(circle,#a5baff,#5a94ff)] rounded-[25px] border-2 border-pink-300 overflow-hidden shadow-[inset_-4px_-4px_10px_rgba(255,255,255,0.3),inset_4px_4px_10px_rgba(0,0,0,0.5),0_4px_15px_rgba(0,0,0,0.7)] cursor-pointer hover:scale-105 transition-all duration-300"
+          >
+            <div
+              class="transition-all duration-300 hover:scale-95 w-full h-full flex justify-center items-center rounded-[25px]"
+            >
+              <img
+                class="w-10 h-10 sm:w-12 sm:h-12 lg:w-12 lg:h-12"
+                src="https://img.icons8.com/nolan/48/star.png"
+                alt="star"
+              />
+              <h2
+                class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-max text-base sm:text-lg lg:text-base font-bold text-slate-900"
+              >
+                Joki
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unicorn divider dengan animasi bounce -->
+      <div
+        class="unicorn-divider"
+        data-aos="fade-up"
+        data-aos-delay="1400"
+        data-aos-duration="1200"
+      >
+        🦄🦄🦄
+      </div>
+    </section>
+    <!-- hero-header end -->
+
+    <!-- menu -->
+    <main
+      id="menu"
+      class="min-h-screen flex flex-col items-center pt-5 relative z-10"
+    >
+      <h1 class="text-4xl font-medium text-pink-800 font-hole mt-8">
+        <span class="text-sky-600">Cherizzle</span> Menu
+      </h1>
+
+      <div
+        class="menu-container grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mt-8"
+        id="menu-container"
+      ></div>
+    </main>
+
+    <!-- menu end-->
+
+    <!-- features container -->
+    <div id="features-container"></div>
+    <!-- features end -->
+
+    <!-- footer -->
+    <div id="footer-container"></div>
+    <!-- footer end -->
+
+    <!-- script  -->
+    <script>
+      feather.replace();
+    </script>
+    <script src="src/styling/script.js"></script>
+  </body>
+</html>
